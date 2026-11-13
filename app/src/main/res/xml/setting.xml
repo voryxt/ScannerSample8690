@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+  <PreferenceScreen
+           xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="Language Setting">
+        <ListPreference
+            android:key="list_language_preference"
+            android:title="Language"
+            android:summary="Select language"
+            android:entries="@array/LanguageArray"
+            android:entryValues="@array/LanguageValues"
+            android:defaultValue="English"
+            android:dialogTitle="Please select" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Set display text">
+        <EditTextPreference
+            android:key="edittext_display_preference"
+            android:title="Set display text"
+            android:summary=""
+            android:defaultValue="Sample App"
+            android:dialogTitle="input display text" />
+        </PreferenceCategory>
+<PreferenceCategory
+              android:title="Text Setting">
+          <ListPreference
+              android:key="list_text_line_preference"
+              android:title="Text Line"
+              android:summary="Select text line"
+              android:entries="@array/TextLineArray"
+              android:entryValues="@array/TextLineValues"
+              android:defaultValue="Up Line"
+              android:dialogTitle="Please select" />
+          <ListPreference
+              android:key="list_Font_size_preference"
+              android:title="Font Size"
+              android:summary="Select Font size"
+              android:entries="@array/FontSizeArray"
+              android:defaultValue="Medium"
+              android:entryValues="@array/FontSizeValues"
+              android:dialogTitle="Please select" />
+          <ListPreference
+              android:key="list_text_color_preference"
+              android:title="Text Color"
+              android:summary="Select text Color"
+              android:entries="@array/TextColorArray"
+              android:entryValues="@array/TextColorValues"
+              android:defaultValue="Default"
+              android:dialogTitle="Please select" />
+    <ListPreference
+        android:key="list_text_color_type_preference"
+        android:title="Text Color Type"
+        android:summary="Select text Color Type"
+        android:entries="@array/TextColorTypeArray"
+        android:entryValues="@array/TextColorTypeValues"
+        android:defaultValue="Background Color"
+        android:dialogTitle="Please select" />
+      </PreferenceCategory>
+    <PreferenceCategory
+               android:title="Button Press Setting">
+          <CheckBoxPreference
+              android:key="button_press_checkbox_preference"
+              android:title="Enable Button Press "
+              android:defaultValue="true"
+              android:summary="Enable/Disable button press" />
+         </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Symplogy Setting">
+        <CheckBoxPreference
+            android:key="ENA13_checkbox_preference"
+            android:title="Enable ENA 13 Sympology"
+            android:defaultValue="true"
+            android:summary="Enable/Disable ENA 13" />
+        <CheckBoxPreference
+            android:key="QR_checkbox_preference"
+            android:title="Enable QR Sympology"
+            android:defaultValue="true"
+            android:summary="Enable/Disable QR" />
+    </PreferenceCategory>
+    </PreferenceScreen>
+
+
+
